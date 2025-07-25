@@ -14,7 +14,7 @@ services:
       - key: DATABASE_URL
         fromDatabase:
           name: student-manager-db
-          property: internalConnectionString
+          property: connectionString # <-- THIS IS THE CORRECTED LINE
       - key: DEBUG
         value: "False"
       - key: PYTHON_VERSION
